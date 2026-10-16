@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 深色模式下的参数卡片配色 -->
+    <color name="param_card_bg">#FF31273E</color>
+    <color name="param_card_text">#FFE6E1E5</color>
+</resources>

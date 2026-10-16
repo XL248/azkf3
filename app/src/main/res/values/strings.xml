@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用标题必须为「姓名 + 学号」 -->
+    <string name="app_name">白芯源 2024110502</string>
+    <string name="main_title">实验三 多 Activity</string>
+
+    <!-- 主界面 4 个按钮 -->
+    <string name="btn_first">按钮1：启动第 1 个 Activity（正向传参）</string>
+    <string name="btn_second">按钮2：启动第 2 个 Activity（返回数据）</string>
+    <string name="btn_third">按钮3：启动第 3 个 Activity（隐式 Intent 拍照）</string>
+    <string name="btn_fourth">按钮4：启动第 4 个 Activity（秒表 StopWatch）</string>
+    <string name="hint_pick_one">请点击下面的按钮，体验 Activity 的四种用法：</string>
+
+    <!-- 第 1 个 Activity：接收并显示 MainActivity 传来的参数 -->
+    <string name="first_title">第 1 个 Activity — 接收参数</string>
+    <string name="first_headline">参数接收成功</string>
+    <string name="first_desc">下面这些内容全部来自 MainActivity 通过 Intent 正向传递过来的数据：</string>
+    <string name="label_name">姓名</string>
+    <string name="label_student_id">学号</string>
+    <string name="label_age">年龄</string>
+    <string name="label_city">城市</string>
+    <string name="no_param">未收到参数</string>
+    <string name="back">返回</string>
+    <string name="param_format">%1$s：%2$s</string>
+    <string name="extra_sender_name">白芯源</string>
+    <string name="extra_sender_student_id">2024110502</string>
+    <string name="extra_sender_city">成都</string>
+    <string name="extra_sender_message">这是 MainActivity 通过 Intent 正向传递过来的问候</string>
+    <!-- 布局文件里的 tools:text 只是 Android Studio 预览用的示例文字，不会进入运行时 -->
+    <string name="tools_ignore_preview_hint" translatable="false">tools:text 仅用于预览，不属于硬编码字符串</string>
+
+    <!-- 第 2 个 Activity：输入并把数据返回给 MainActivity -->
+    <string name="second_title">第 2 个 Activity — 返回数据</string>
+    <string name="second_tip">在下面输入内容，点击「确定」后会带着结果回到 MainActivity 并显示出来。</string>
+    <string name="hint_input">请输入要返回给 MainActivity 的内容</string>
+    <string name="action_confirm">确定并返回</string>
+    <string name="toast_empty_input">还没有输入内容，请输入后再确定</string>
+    <string name="result_prefix">第 2 个 Activity 返回的结果：</string>
+    <string name="result_empty">（返回内容为空）</string>
+    <string name="toast_back_cancel">第 2 个 Activity 返回时点了返回键 / 取消</string>
+
+    <!-- 第 3 个 Activity：隐式 Intent 调用系统相机 -->
+    <string name="third_title">第 3 个 Activity — 隐式 Intent 拍照</string>
+    <string name="third_tip">点击下面的按钮，会用隐式 Intent（MediaStore.ACTION_IMAGE_CAPTURE）调用系统相机，拍照完成后在本页显示照片。</string>
+    <string name="btn_take_photo">拍照</string>
+    <string name="photo_placeholder">照片将显示在这里</string>
+    <string name="photo_desc">照片内容说明</string>
+    <string name="photo_no_camera">没有找到可用的相机应用</string>
+    <string name="photo_denied">相机权限被拒绝，无法拍照</string>
+    <string name="photo_failed">拍照失败或没有返回照片数据</string>
+    <string name="photo_canceled">已取消拍照</string>
+    <string name="photo_ok">拍照成功，下面就是刚拍到的照片：</string>
+
+    <!-- 第 4 个 Activity：秒表 -->
+    <string name="fourth_title">第 4 个 Activity — 秒表 StopWatch</string>
+    <string name="fourth_tip">旋转屏幕（横屏 / 竖屏切换）时计时不会中断，也不会归零。</string>
+    <string name="stopwatch_zero">00:00.0</string>
+    <string name="action_start">开始</string>
+    <string name="action_pause">暂停</string>
+    <string name="action_reset">重置</string>
+    <string name="stopwatch_state_idle">未开始</string>
+    <string name="stopwatch_state_running">计时中…</string>
+    <string name="stopwatch_state_paused">已暂停</string>
+    <string name="stopwatch_orientation_portrait">当前屏幕方向：竖屏</string>
+    <string name="stopwatch_orientation_landscape">当前屏幕方向：横屏</string>
+</resources>
